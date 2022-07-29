@@ -11,3 +11,5 @@ public class Calc {
 		System.out.println("足すと" + total + "、引くと" + delta);
 	}
 }
+
+//import パッケージ文.クラス名;
