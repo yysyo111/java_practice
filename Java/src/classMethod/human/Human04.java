@@ -15,6 +15,7 @@ public class Human04 {
 		System.out.println("人の数は" + Human04.humanCount);
 	} 
 	
+	 // インスタンス変数のnameを表示
 	public void instanceMethodPrint() {
 		System.out.println("名前は" + name);
 	}
