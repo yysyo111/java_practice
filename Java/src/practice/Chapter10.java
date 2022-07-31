@@ -22,7 +22,7 @@ public class Chapter10 {
         	Chapter10.throwSQLException();
         } catch (SQLException e) {
         	System.out.println("SQLExceptionが発生しました");
-        	// printStackTraceでスタックトレースを出力
+        	// printStackTraceでスタックトレースを出力(エラーの情報)
         	e.printStackTrace();
         } finally {
         	// 例外発生しても出力するため、finallyブロックに記述
@@ -36,7 +36,9 @@ public class Chapter10 {
     }
     
     public static void validIndex(int[] array, int index) {
+    	// 配列のサイズは、lengthで取得
     	if (array.length <= index) {
+    		// throw文で、例外をスロー
     		throw new IllegalArgumentException(index + " はサイズの範囲外です");
     	}
     	System.out.println("インデックス " + index + " の要素は " + array[index] + " です");
