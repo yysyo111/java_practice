@@ -21,3 +21,13 @@ public class HumanCapsule {
 		return this.age;
 	}
 }
+
+////getterメソッド
+//public 戻り値の型(フィールドの型)  getフィールド名() {
+// return this.フィールド名
+//}
+//
+//// setterメソッド
+//public void setフィールド名(フィールドの型の引数) {
+// this.フィールド名 = フィールドの型の引数;
+//}
