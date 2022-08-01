@@ -8,6 +8,8 @@ public class Student extends Human {
 		this.score = score;
 	}
 	
+	// オーバーライドして、Studentクラス用に処理を変更
+	@Override
 	public String getProfile() {
 		String profile = "年齢は" + super.age + "です";
 		profile += "学生で、テストの点数は" + this.score + "点です。";

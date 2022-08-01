@@ -13,3 +13,4 @@ public class Polymorphism01 {
 		System.out.println("Humanクラスのメソッド：プロフィールを紹介します。" + human2.getProfile());
 	}
 }
+

@@ -8,6 +8,8 @@ public class Human {
 		this.name = name;
 		this.age = age;
 	}
+	
+	// final修飾子が設定されているのでオーバーライド禁止
 	final public String getName() {
 		return this.name;
 	}
