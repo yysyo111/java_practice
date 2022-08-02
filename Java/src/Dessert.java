@@ -15,6 +15,7 @@ public enum Dessert {
     public int getPrice() {
         return price;
     }
+    
     public static void main(String[] args) {
     	System.out.println(Dessert.APPLE.getPrice());
     	System.out.println(Dessert.ICE_CREAM.getPrice());
