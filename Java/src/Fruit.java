@@ -53,6 +53,7 @@ public class Fruit {
 		    .map(f -> f.order(20)) // 中間操作2: 20個ずつ発注
 		    .sorted((f1, f2) -> f1.getQuantity() - f2.getQuantity()) // 中間操作3: 個数の少ない順に並び替え
 		    .forEach(System.out::println); // 終端操作: 標準出力
+//		    .collect(Collectors.toList());
 //		一行で場合　
 //		fruits.stream().filter(f -> f.getQuantity() <= 10).map(f -> f.order(20)).sorted((f1, f2) -> f1.getQuantity() - f2.getQuantity()).forEach(System.out::println);
 	}
@@ -61,6 +62,9 @@ public class Fruit {
 //1.在庫数が10個以下のフルーツを抽出する
 //2.抽出したものに対し、20個ずつ発注（個数を加算）する
 //3.個数が少ない順に並び替える
+
+
+//以下ラムダ式を使わない処理
 
 //フルーツクラス
 //public class Fruit {
